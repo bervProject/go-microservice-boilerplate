@@ -1,5 +1,7 @@
 # go-microservice-boilerplate
 
+[![codecov](https://codecov.io/gh/bervProject/go-microservice-boilerplate/branch/main/graph/badge.svg?token=zpjumru6lx)](https://codecov.io/gh/bervProject/go-microservice-boilerplate)
+
 Go Microservice Boilerplate
 
 ## Environment
