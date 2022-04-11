@@ -1,4 +1,4 @@
-module microservices-boilerplate
+module github.com/bervProject/go-microservice-boilerplate
 
 go 1.18
 
