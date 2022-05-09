@@ -45,12 +45,19 @@ func InitGraphQL(db *gorm.DB) {
 			},
 		},
 	)
-
 	fields := graphql.Fields{
 		"hello": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				return "world", nil
+			},
+		},
+		"getAllUsers": &graphql.Field{
+			Type: graphql.NewList(userType),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				var users []models.User
+				db.Model(&models.User{}).Find(&users)
+				return users, nil
 			},
 		},
 	}
