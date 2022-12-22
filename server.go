@@ -32,7 +32,9 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to connect database, error: %v", err)
 	}
-	db.AutoMigrate(&models.User{})
+	if err = db.AutoMigrate(&models.User{}); err != nil {
+		log.Fatalf("Failed migrate, err: %v", err)
+	}
 	graph_base.InitGraphQL(db)
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
@@ -53,8 +55,18 @@ func main() {
 		if err != nil {
 			return err
 		}
-		c.JSON(200, data)
+		if err := c.JSON(200, data); err != nil {
+			return err
+		}
 		return nil
+	})
+	e.POST("/publish-message", func(c echo.Context) error {
+		messageRequest := &services.KafkaRequest{}
+		if err := c.Bind(messageRequest); err != nil {
+			return err
+		}
+		producer := services.NewProducer()
+		return producer.Publish(c.Request().Context(), messageRequest.Message)
 	})
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%s", utils.GetEnv("PORT", "1323"))))
 }
