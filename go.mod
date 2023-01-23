@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.18.8
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.78.0
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.80.0
 	github.com/graphql-go/graphql v0.8.0
 	github.com/labstack/echo/v4 v4.10.0
 	github.com/segmentio/kafka-go v0.4.38
