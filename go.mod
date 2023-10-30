@@ -3,7 +3,7 @@ module github.com/bervProject/go-microservice-boilerplate
 go 1.18
 
 require (
-	github.com/aws/aws-sdk-go-v2/config v1.18.45
+	github.com/aws/aws-sdk-go-v2/config v1.19.1
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.125.0
 	github.com/graphql-go/graphql v0.8.1
 	github.com/labstack/echo/v4 v4.11.2
