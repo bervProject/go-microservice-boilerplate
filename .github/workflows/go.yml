@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        go: ["1.19", "1.20"]
+        go: ["1.20", "1.21", "1.22"]
     steps:
     - uses: actions/checkout@v4
     - name: Set up Go
