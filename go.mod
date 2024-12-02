@@ -8,7 +8,7 @@ require (
 	github.com/graphql-go/graphql v0.8.1
 	github.com/labstack/echo/v4 v4.12.0
 	github.com/segmentio/kafka-go v0.4.47
-	gorm.io/driver/postgres v1.5.10
+	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
 )
 
