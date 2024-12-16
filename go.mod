@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.33
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.177.3
 	github.com/graphql-go/graphql v0.8.1
-	github.com/labstack/echo/v4 v4.13.0
+	github.com/labstack/echo/v4 v4.13.2
 	github.com/segmentio/kafka-go v0.4.47
 	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
@@ -39,7 +39,7 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/crypto v0.31.0 // indirect
-	golang.org/x/net v0.24.0 // indirect
+	golang.org/x/net v0.32.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
