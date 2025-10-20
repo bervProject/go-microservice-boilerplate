@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.31.13
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.254.1
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.257.2
 	github.com/graphql-go/graphql v0.8.1
 	github.com/labstack/echo/v4 v4.13.4
 	github.com/segmentio/kafka-go v0.4.49
