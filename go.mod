@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.32.20
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.304.2
 	github.com/graphql-go/graphql v0.8.1
-	github.com/labstack/echo/v4 v4.15.2
+	github.com/labstack/echo/v4 v4.15.3
 	github.com/segmentio/kafka-go v0.4.51
 	gorm.io/driver/postgres v1.6.0
 	gorm.io/gorm v1.31.1
