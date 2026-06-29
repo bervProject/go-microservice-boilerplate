@@ -9,7 +9,7 @@ require (
 	github.com/labstack/echo/v4 v4.15.2
 	github.com/segmentio/kafka-go v0.4.51
 	gorm.io/driver/postgres v1.6.0
-	gorm.io/gorm v1.31.1
+	gorm.io/gorm v1.31.2
 )
 
 require (
