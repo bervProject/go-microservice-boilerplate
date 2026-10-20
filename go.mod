@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.33.9
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.336.1
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.339.0
 	github.com/graphql-go/graphql v0.8.1
 	github.com/labstack/echo/v4 v4.16.0
 	github.com/segmentio/kafka-go v0.4.51
